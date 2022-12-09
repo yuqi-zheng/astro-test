@@ -21,5 +21,6 @@
 
     h1 {
         font-family: 'Archivo Black', sans-serif;
+        text-align: center;
     }
 </style>
