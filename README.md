@@ -1,1 +1,1 @@
-[Deployment](lambda-digital.com.au)
+[Deployment](https://lambda-digital.com.au/)
