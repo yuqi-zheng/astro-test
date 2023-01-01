@@ -17,7 +17,7 @@
 <style>
     nav {
         height: 124px;
-        background-color: white;
+        background-color: #F7F5F3;
         display: flex;
         justify-content: space-between;
         align-items: center;
