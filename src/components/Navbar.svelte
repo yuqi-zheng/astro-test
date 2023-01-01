@@ -5,7 +5,7 @@
 <header>
     <nav>
         <ul>
-            <li><a href="/"><img src="logo-long.svg" alt="LOGO"></a></li>
+            <li><a href="/"><img src="logo-stacked.svg" alt="LOGO"></a></li>
             <li><a href="/about">about</a></li>
             <li><a href="/services">services</a></li>
             <li><a href="/gallery">gallery</a></li>

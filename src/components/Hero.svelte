@@ -5,7 +5,7 @@
 <div id="hero">
     <div id="hero-left">
         <p id="tag">Reach new horizons.</p>
-        <p id="expand">We build and maintain high performance websites for small businesses, at an affordable cost.</p>
+        <p id="expand">We build and maintain high performance websites for small businesses, at an affordable monthly cost.</p>
         <button>let's get started! <img src="send-dark.svg" alt=" "></button>
     </div>
     <div class="wave">
