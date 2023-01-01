@@ -16,7 +16,7 @@
 
 <style>
     nav {
-        height: 152px;
+        height: 124px;
         background-color: white;
         display: flex;
         justify-content: space-between;
@@ -41,7 +41,7 @@
         color: black;
         font-family: 'Outfit', sans-serif;
         font-size: 20px;
-        font-weight: 400;
+        font-weight: 300;
 
     }
     button {
@@ -50,11 +50,10 @@
         justify-content: space-between;
         align-items: center;
         padding: 18px 36px;
-        gap: 10px;
         box-sizing: border-box;
         border-radius: 50px;
         width: 200px;
-        height: 56px;
+        height: 48px;
 
         /* colour */
         color: white;
@@ -65,9 +64,13 @@
         isolation: isolate;
         
         /* font */
-        font-weight: 500;
+        font-weight: 400;
         font-family: 'Outfit', sans-serif;
         font-size: 20px;
+    }
+
+    button:hover {
+        background: #5043BA;
     }
 
 </style>
