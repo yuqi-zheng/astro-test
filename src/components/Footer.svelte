@@ -207,7 +207,7 @@
 
     .wave-bottom {
         position: absolute;
-        bottom: -50px;
+        bottom: -60px;
         left: 0;
         width: 100%;
         overflow: hidden;

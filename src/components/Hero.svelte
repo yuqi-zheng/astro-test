@@ -85,13 +85,7 @@
     width: 100%;
     overflow: hidden;
     line-height: 0;
-}
-
-.wave svg {
-    position: relative;
-    display: block;
-    width: calc(171% + 1.3px);
-    height: 90px;
+	pointer-events: none;
 }
 
 
