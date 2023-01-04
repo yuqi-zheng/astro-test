@@ -1,17 +1,20 @@
 ---
+import "../styles/global.css";
 import Layout from '../layouts/Layout.astro';
-import Loading from '../components/Loading.svelte';
+import Hero from '../components/Hero.svelte';
+import Footer from '../components/Footer.svelte';
 ---
 
 <Layout title="Lambda Digital">
 	<main>
-		<Loading/>
+		<Hero/>
+		<div></div>
 	</main>
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1rem;
+	div {
+		height: 1000px;
 	}
+
 </style>
