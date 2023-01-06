@@ -2,19 +2,27 @@
 import "../styles/global.css";
 import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero.svelte';
-import Footer from '../components/Footer.svelte';
+import Included from "../components/Included.svelte";
+import Panel from "../components/Panel.svelte";
 ---
 
 <Layout title="Lambda Digital">
 	<main>
 		<Hero/>
-		<div></div>
+		<div id="content">
+			<Panel/>
+			<Included/>
+		</div>
 	</main>
 </Layout>
 
 <style>
-	div {
-		height: 1000px;
+	#content {
+		display: flex;
+		flex-direction: column;
+		gap: 50px;
+		padding: 32px 48px 48px 48px;
+		margin-bottom: 48px;
 	}
 
 </style>

@@ -56,6 +56,7 @@
     #container {
         display: flex;
         flex-direction: column;
+        margin-top: 15vh;
     }
 
     #waves {

@@ -25,6 +25,14 @@
 
 @font-face {
     font-family: 'Outfit';
+    src: url('/fonts/outfit/webfonts/outfit-latin-500-normal.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Outfit';
     src: url('/fonts/outfit/webfonts/outfit-latin-600-normal.woff') format('woff');
     font-weight: 600;
     font-style: normal;
