@@ -74,7 +74,7 @@
         flex-direction: column;
         justify-content: center;
         padding: 20px;
-        font-size: 18;
+        font-size: 18px;
         font-weight: 400;
     }
 
