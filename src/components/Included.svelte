@@ -75,7 +75,7 @@
         justify-content: center;
         padding: 20px;
         font-size: 18;
-        font-weight: 300;
+        font-weight: 400;
     }
 
 </style>
