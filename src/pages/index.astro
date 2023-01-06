@@ -2,13 +2,15 @@
 import "../styles/global.css";
 import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero.svelte';
-import Footer from '../components/Footer.svelte';
+import Included from "../components/Included.svelte";
 ---
 
 <Layout title="Lambda Digital">
 	<main>
 		<Hero/>
-		<div></div>
+		<div>
+			<Included/>
+		</div>
 	</main>
 </Layout>
 
