@@ -20,6 +20,7 @@
   <div class="bottom">
     <p>{second}</p>
     <img
+      class="arrow"
       src="arrow.svg"
       alt="arrow"
       style="left: 3.96%; right: 3.96%; top: 29.29%; bottom: 29.29%;"
@@ -51,6 +52,7 @@
     overflow: hidden;
   }
 
+
   h4 {
     font-size: 32px;
     font-weight: 400;
@@ -77,5 +79,10 @@
     font-size: 16px;
     gap: 18px;
     align-self: stretch;
+    transition: all 0.2s;
+  }
+
+  .bottom:hover {
+   transform: translateX(-2%);
   }
 </style>

@@ -57,7 +57,7 @@
     color: white;
     background: linear-gradient(to left, #6756de 50%, #5043ba 50%) right;
     background-size: 200%;
-    transition: .25gs ease-out;
+    transition: .2s ease-out;
     border: 1px solid #967eff;
 
     white-space: nowrap;
@@ -71,5 +71,10 @@
 
   button:hover {
     background-position: left;
+  }
+
+  button:hover img {
+      transform: scale(0.8);
+      transition: 0.2s ease-in-out;
   }
 </style>
