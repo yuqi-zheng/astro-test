@@ -6,23 +6,23 @@
   <h2><u>Everything</u> you need with no big unfront cost</h2>
   <section class="cards">
     <Card
-      header="Design."
+      header="Design"
       text="No templates - we custom design your website from the ground up based on your needs.
     You give us as much detail as you want and we will do the rest."
       icon="palette.svg"
       second="Take a look at our gallery!"
     />
     <Card
-      header="Develop."
-      text="We hand-code each line to maximise performance. Lambda websites are optimised for
-    minimal loading times - which will bump up your ranking in Google searches."
+      header="Develop"
+      text="We hand-code each line to maximise performance. Lambda websites are built with industry leading web frameworks - optimised for
+    minimal loading times."
       icon="keyboard.svg"
-      second="Site speed and Google rankings"
+      second="Why should you care?"
     />
     <Card
-      header="Maintain."
+      header="Maintain"
       text="We take care of any changes you want to make, and perform routine maintenance to keep your website
-    running optimally."
+    running smoothly."
       icon="home_repair_service.svg"
       second="Small-business-friendly pricing"
     />

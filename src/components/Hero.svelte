@@ -84,8 +84,8 @@
   }
 
   button:hover img {
-      transform: scale(0.8);
-      transition: 0.2s ease-in-out;
+    transform: scale(0.8);
+    transition: 0.2s ease-in-out;
   }
 
   .wave {
