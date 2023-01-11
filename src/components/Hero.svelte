@@ -1,5 +1,4 @@
 <script>
-  import "../styles/global.css";
 </script>
 
 <div id="hero">
@@ -9,8 +8,8 @@
       We build and maintain high performance websites for small businesses, at
       an affordable monthly cost.
     </p>
-    <button href="/contact"
-      >let's get started! <img src="send-dark.svg" alt=" " /></button
+    <a id="button" href="/contact"
+      >let's get started! <img src="send-dark.svg" alt=" " /></a
     >
   </div>
   <img class="wave" src="wave.svg" alt=" " />
@@ -33,6 +32,7 @@
     flex-direction: column;
     justify-content: space-around;
     width: 50%;
+    max-width: 700px;
     height: 450px;
     background-color: rgba(39, 41, 74, 0.8);
     backdrop-filter: blur(5px);
@@ -54,7 +54,7 @@
     width: 80%;
   }
 
-  button {
+  #button {
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
@@ -64,6 +64,7 @@
     width: 275px;
     height: 55px;
     isolation: isolate;
+    text-decoration: none;
     font-family: "Outfit", sans-serif;
     color: #27294a;
     font-weight: 400;
@@ -78,12 +79,12 @@
     transition: 0.2s ease-out;
   }
 
-  button:hover {
+  #button:hover {
     background-position: left;
     border: 2px solid #ea8827;
   }
 
-  button:hover img {
+  #button:hover img {
     transform: scale(0.8);
     transition: 0.2s ease-in-out;
   }

@@ -1,0 +1,58 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Contact Us">
+  <main>
+    <div id="col1"></div>
+    <div id="col2">
+      <form name="contact" method="POST" data-netlify="true">
+        <div id="col2.1">
+          <p class="input">
+            <label>Name <input type="text" name="name" /></label>
+          </p>
+          <p class="input">
+            <label>Business Name <input type="text" name="name" /></label>
+          </p>
+          <p class="input">
+            <label>Email <input type="email" name="email" /></label>
+          </p>
+          <p class="input">
+            <label>Phone <input type="tel" name="phone" /></label>
+          </p>
+        </div>
+        <div id="col2.2">
+          <p class="input"></p><fieldset>
+            <legend>How should we contact you?</legend>
+            <input
+              type="radio"
+              name="contact-method"
+              value="email"
+              id="email"
+            />
+            <label for="email">Email</label>
+            <input
+              type="radio"
+              name="contact-method"
+              value="phone"
+              id="phone"
+            />
+            <label for="phone">Phone</label>
+          </fieldset>
+
+          <p class="input">
+            <label
+              >Tell us about your project <textarea name="message"></textarea>
+            </label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </div>
+      </form>
+    </div>
+  </main>
+</Layout>
+
+<style>
+</style>

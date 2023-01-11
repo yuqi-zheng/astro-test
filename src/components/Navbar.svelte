@@ -1,5 +1,4 @@
 <script>
-  import "../styles/global.css";
 </script>
 
 <header>
@@ -10,7 +9,7 @@
       <li><a href="/services">services</a></li>
       <li><a href="/gallery">gallery</a></li>
     </ul>
-    <button href="/contact">contact us!<img src="send.svg" alt="" /></button>
+    <a id="button" href="/contact">contact us!<img src="send.svg" alt="" /></a>
   </nav>
 </header>
 
@@ -42,7 +41,7 @@
     font-size: 20px;
     font-weight: 300;
   }
-  button {
+  #button {
     /* position */
     display: flex;
     justify-content: space-between;
@@ -65,15 +64,16 @@
 
     /* font */
     font-weight: 400;
+    text-decoration: none;
     font-family: "Outfit", sans-serif;
     font-size: 20px;
   }
 
-  button:hover {
+  #button:hover {
     background-position: left;
   }
 
-  button:hover img {
+  #button:hover img {
       transform: scale(0.8);
       transition: 0.2s ease-in-out;
   }

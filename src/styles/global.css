@@ -44,9 +44,17 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-family: 'Outfit', sans-serif;
+}
+
+main {
+    min-height: 100vh;
+    max-width: 1500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 body {
     background-color: #F7F5F3;
-    min-height: 100vh;
 }

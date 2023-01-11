@@ -1,6 +1,4 @@
 <script>
-  import "../styles/global.css";
-
   export let text;
   export let icon;
   export let header;
@@ -52,7 +50,6 @@
     overflow: hidden;
   }
 
-
   h4 {
     font-size: 32px;
     font-weight: 400;
@@ -83,6 +80,6 @@
   }
 
   .bottom:hover {
-   transform: translateX(-2%);
+    transform: translateX(-2%);
   }
 </style>

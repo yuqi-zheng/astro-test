@@ -1,5 +1,4 @@
 ---
-import "../styles/global.css";
 import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero.svelte';
 import Included from "../components/Included.svelte";
@@ -7,8 +6,8 @@ import Panel from "../components/Panel.svelte";
 ---
 
 <Layout title="Lambda Digital">
+	<Hero/>
 	<main>
-		<Hero/>
 		<div id="content">
 			<Panel/>
 			<Included/>
@@ -20,9 +19,11 @@ import Panel from "../components/Panel.svelte";
 	#content {
 		display: flex;
 		flex-direction: column;
+		align-items: center;
 		gap: 50px;
 		padding: 32px 48px 48px 48px;
 		margin-bottom: 48px;
+		align-self: center;
 	}
 
 </style>
