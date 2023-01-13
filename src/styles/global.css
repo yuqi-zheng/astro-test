@@ -96,6 +96,8 @@ body {
 
 main {
     padding: 2em 3em 2em 3em;
+    max-width: 200em;
+    margin: auto;
 }
 
 /* a elements that don't have a class get default styles */

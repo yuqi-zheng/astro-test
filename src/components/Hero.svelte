@@ -125,4 +125,10 @@
     text-align: center;
   }
 }
+
+@media screen and (min-width: 150em) {
+  .wave {
+    display: none;
+  }
+}
 </style>

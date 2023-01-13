@@ -276,4 +276,15 @@
       display: none;
     }
   }
+  
+  @media screen and (min-width: 150em) {
+    .wave-top,
+    .wave-bottom {
+      display: none;
+    }
+
+    #container {
+      margin-top: 5vh;
+    }
+  }
 </style>
