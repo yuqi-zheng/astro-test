@@ -124,7 +124,7 @@
     font-weight: var(--fw-medium);
   }
 
-  @media screen and (max-width: 50em) {
+  @media screen and (max-width: 70em) {
     .row {
       flex-direction: column;
     }
@@ -138,12 +138,17 @@
 
     .header {
       justify-content: center;
+      padding: 0.5em 0em 0.5em 0em;
     }
-    img {
-      display: none;
-    }
+
     .text {
       text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 50em) {
+    img {
+      display: none;
     }
   }
 </style>

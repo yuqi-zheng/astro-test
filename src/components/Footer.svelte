@@ -1,4 +1,5 @@
 <script>
+  // import '../styles/global.css'
 </script>
 
 <div id="container">
@@ -13,10 +14,10 @@
           <li id="how-can-we-help">How can we help?</li>
           <li>Contact us at anytime!</li>
         </ul>
-        <div id="coa">
+        <a href="/contact" id="coa">
           <p id="send-us-a-message">send us a message</p>
           <p id="coa-email">hello@lambda-digital.com.au</p>
-        </div>
+        </a>
       </div>
 
       <div id="row-2">
@@ -41,7 +42,6 @@
           <h3>Contact</h3>
           <ul id="contact-list">
             <li>hello@lambda-digital.com.au</li>
-            <li>64 Zoo Lane</li>
           </ul>
         </div>
         <div id="social">
@@ -50,6 +50,7 @@
           <img src="instagram.svg" alt="Instagram" />
         </div>
       </div>
+      <a id="privacy" href="/">Privacy Policy</a>
     </div>
   </footer>
 </div>
@@ -79,13 +80,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 6em;
   }
 
   #row-1 {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 6em;
   }
 
   #coa-text {
@@ -95,28 +96,31 @@
   }
 
   #how-can-we-help {
-    color: #f3e9ac;
+    color: var(--clr-accent-200);
   }
 
   #coa {
     width: 22em;
     height: 4.5em;
     border-radius: 1.5em;
-    background-color: #f7f5f3;
+    background-color: var(--clr-neutral-50);
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 2em;
     font-size: 1.25em;
+    text-decoration: none;
   }
 
   #send-us-a-message {
-    color: #86949f;
+    text-decoration: none;
+    color: var(--clr-neutral-400);
     white-space: nowrap;
   }
 
   #coa-email {
-    color: #303438;
+    text-decoration: none;
+    color: var(--clr-neutral-900);
     white-space: nowrap;
     font-weight: var(--fw-bold);
   }
@@ -146,7 +150,7 @@
   }
 
   #about a {
-    color: #f7f5f3;
+    color: var(--clr-neutral-50);
   }
 
   #nav {
@@ -163,7 +167,7 @@
 
   #nav-list a {
     text-decoration: none;
-    color: #f3e9ac;
+    color: var(--clr-accent-200);
   }
 
   #nav-list a:hover {
@@ -214,5 +218,62 @@
     overflow: hidden;
     line-height: 0;
     z-index: 4;
+  }
+
+  #privacy {
+    align-self: center;
+    color: var(--clr-neutral-50);
+  }
+
+
+  @media screen and (max-width: 50em) {
+    #rows {
+      justify-content: center;
+    }
+    #row-1,
+    #row-2 {
+      flex-direction: column;
+    }
+
+    #about {
+      transform: none;
+    }
+
+    #coa {
+      font-size: 1em;
+      width: 100%;
+      max-width: 30em;
+      margin-top: 2em;
+    }
+
+    #row-2 {
+      align-items: center;
+      gap: 2em;
+    }
+
+    #about {
+      width: 100%;
+    }
+
+    #nav {
+      align-items: center;
+    }
+
+    #social {
+      flex-direction: row;
+    }
+
+    #privacy {
+      margin-top: 2em;
+    }
+
+    footer {
+      padding: 2em 1.5em 2em 1.5em;
+    }
+
+    .wave-top,
+    .wave-bottom {
+      display: none;
+    }
   }
 </style>

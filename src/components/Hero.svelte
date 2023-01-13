@@ -11,7 +11,7 @@
         an affordable monthly cost.
       </p>
     </div>
-    <a id="button" href="/contact"
+    <a class="button" href="/contact"
       >let's get started! <img src="send-dark.svg" alt=" " /></a
     >
   </div>
@@ -48,6 +48,11 @@
     font-weight: var(--fw-black);
   }
 
+  #text {
+    display: flex;
+    flex-direction: column;
+  }
+
   #expand {
     font-family: "Outfit", sans-serif;
     font-weight: var(--fw-medium);
@@ -56,7 +61,7 @@
     width: 75%;
   }
 
-  #button {
+  .button {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -65,7 +70,7 @@
     gap: 0.5em;
     padding: 0.4em 2em;
     width: 12em;
-    isolation: isolate;
+    text-decoration: none;
     font-family: "Outfit", sans-serif;
     color: #27294a;
     font-weight: var(--fw-medium);
@@ -77,12 +82,12 @@
     transition: 0.2s ease-out;
   }
 
-  #button:hover {
+  .button:hover {
     background-position: left;
     border: 2px solid #ea8827;
   }
 
-  #button:hover img {
+  .button:hover img {
     transform: scale(0.8);
     transition: 0.2s ease-in-out;
   }
@@ -93,7 +98,6 @@
     left: 0;
     width: 100%;
     overflow: hidden;
-    line-height: 0;
     pointer-events: none;
   }
 
@@ -102,18 +106,23 @@
   #hero-left {
     width: 100%;
     align-items: center;
-    gap: 2em;
+    gap: 1em;
+    padding: 2em 1.5em 2em 1.5em;
+  }
+  .wave {
+    display: none;
   }
   #expand {
     width: 100%;
   }
 
-  .tag {
-    text-align: center;
+  #text {
+    gap: 4em;
   }
 
-  #button {
-    font-size: 1em;
+  .tag {
+    font-size: 3em;
+    text-align: center;
   }
 }
 </style>
