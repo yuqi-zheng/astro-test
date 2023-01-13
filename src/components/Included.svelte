@@ -2,7 +2,7 @@
   import "../styles/global.css";
 </script>
 
-<div>
+<section>
   <h2>What's included?</h2>
   <div id="container">
     <div class="row">
@@ -59,26 +59,25 @@
       <div class="text">Talk to real people, based in Melbourne</div>
     </div>
   </div>
-</div>
+</section>
 
 <style>
   h2 {
     font-family: "Outfit", sans-serif;
-    font-size: 32px;
-    font-weight: 400;
-    margin-bottom: 24px;
+    font-size: 2em;
+    font-weight: var(--fw-medium);
+    margin-bottom: 1em;
   }
   #container {
-    box-sizing: border-box;
-    background-color: #5043ba;
-    border: 2px solid #6756de;
+    background-color: var(--clr-primary-700);
+    border: 2px solid var(--clr-primary-600);
     box-shadow: 0px 0px 24px 4px rgba(48, 52, 56, 0.25);
     width: 100%;
     border-radius: 10px;
     font-family: "Outfit", sans-serif;
     display: flex;
-    gap: 24px;
-    padding: 24px;
+    gap: 1.5em;
+    padding: 1.5em;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
@@ -88,27 +87,26 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    gap: 24px;
-    height: 100px;
+    gap: 1.5em;
   }
 
   .header {
     display: flex;
+    flex: 1 1 0px;
     justify-content: flex-start;
     align-items: center;
-    gap: 20px;
+    gap: 1.5em;
     white-space: nowrap;
-    width: 32%;
     background-color: #f7f5f3;
     border: 3px solid #9ba6ae;
     border-radius: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
   }
 
   h3 {
-    font-size: 32px;
-    font-weight: 400;
+    font-size: 2em;
+    font-weight: var(--fw-medium);
   }
 
   .text {
@@ -116,11 +114,36 @@
     background-color: #f7f5f3;
     border: 3px solid #9ba6ae;
     border-radius: 10px;
+    
     display: flex;
+    flex: 2 2 0px;
     flex-direction: column;
     justify-content: center;
-    padding: 20px;
-    font-size: 18px;
-    font-weight: 400;
+    padding: 1.5em;
+    font-size: 1.25em;
+    font-weight: var(--fw-medium);
+  }
+
+  @media screen and (max-width: 50em) {
+    .row {
+      flex-direction: column;
+    }
+    .text {
+      width: 100%;
+      font-size: 1em;
+    }
+    h3 {
+      font-size: 1.5em;
+    }
+
+    .header {
+      justify-content: center;
+    }
+    img {
+      display: none;
+    }
+    .text {
+      text-align: center;
+    }
   }
 </style>

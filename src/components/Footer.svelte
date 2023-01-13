@@ -25,16 +25,15 @@
           <p>
             Lambda Digital is a digital media team based in Melbourne,
             specialising in high performance websites for small businesses. We
-            provide a full package service and ongoing maintenance, at an
+            provide a full package service with ongoing maintenance, at an
             affordable monthly cost.
           </p>
-          <a href="/about">Learn more</a>
+          <a href="/about"><u>Learn more</u></a>
         </div>
         <div id="nav">
           <h3>Navigation</h3>
           <ul id="nav-list">
             <li><a href="/services">Services</a></li>
-            <li><a href="/gallery">Gallery</a></li>
             <li><a href="/about">About Us</a></li>
           </ul>
         </div>
@@ -70,7 +69,7 @@
     position: relative;
     bottom: 0;
     background-color: #383971;
-    padding: 72px 48px 32px 48px;
+    padding: 4em 3em 2em 3em;
     font-family: "Outfit", sans-serif;
     color: #f7f5f3;
     z-index: 6;
@@ -80,19 +79,18 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 100px;
+    gap: 6em;
   }
 
   #row-1 {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: center;
-    gap: 200px;
   }
 
   #coa-text {
-    font-size: 48px;
-    font-weight: 600;
+    font-size: 3em;
+    font-weight: var(--fw-bold);
     list-style: none;
   }
 
@@ -101,16 +99,15 @@
   }
 
   #coa {
-    box-sizing: border-box;
-    width: 400px;
-    height: 80px;
-    border-radius: 25px;
+    width: 22em;
+    height: 4.5em;
+    border-radius: 1.5em;
     background-color: #f7f5f3;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 25px;
-    font-size: 20px;
+    padding: 2em;
+    font-size: 1.25em;
   }
 
   #send-us-a-message {
@@ -121,7 +118,7 @@
   #coa-email {
     color: #303438;
     white-space: nowrap;
-    font-weight: 600;
+    font-weight: var(--fw-bold);
   }
 
   #row-2 {
@@ -131,21 +128,21 @@
   }
 
   h3 {
-    font-weight: 600;
+    font-weight: var(--fw-bold);
   }
 
   #logo {
-    min-width: 200px;
-    max-width: 200px;
+    min-width: 12.5em;
+    max-width: 12.5em;
   }
 
   #about {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 30px;
+    gap: 2em;
     width: 40%;
-    transform: translateY(-16px);
+    transform: translateY(-1em);
   }
 
   #about a {
@@ -156,12 +153,12 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 30px;
+    gap: 2em;
   }
 
   #nav-list {
     list-style: none;
-    font-weight: 600;
+    font-weight: var(--fw-bold);
   }
 
   #nav-list a {
@@ -178,13 +175,13 @@
     flex-direction: column;
     justify-content: flex-start;
     text-align: center;
-    gap: 30px;
+    gap: 2em;
   }
 
   #contact-list {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.5em;
     list-style: none;
   }
 
@@ -193,15 +190,15 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    gap: 25px;
+    gap: 1.75em;
   }
 
   .social-icon {
-    max-width: 25px;
+    max-width: 2em;
   }
   .wave-top {
     position: absolute;
-    bottom: -5px;
+    bottom: -0.5em;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -211,7 +208,7 @@
 
   .wave-bottom {
     position: absolute;
-    bottom: -60px;
+    bottom: -5em;
     left: 0;
     width: 100%;
     overflow: hidden;
