@@ -6,59 +6,50 @@
 </script>
 
 <article class="card">
-  <div class="container">
     <div class="header">
       <h4>{header}</h4>
-      <img src={icon} alt="palette" style="width:43.98px;height:43.98px;" />
+      <img src={icon} alt="icon" />
     </div>
     <div class="text">
       <p>{text}</p>
     </div>
-  </div>
   <div class="bottom">
     <p>{second}</p>
     <img
       class="arrow"
       src="arrow.svg"
       alt="arrow"
-      style="left: 3.96%; right: 3.96%; top: 29.29%; bottom: 29.29%;"
     />
   </div>
 </article>
 
 <style>
   .card {
-    box-sizing: border-box;
     box-shadow: 0px 0px 6px 2px rgba(48, 52, 56, 0.25);
-    height: 275px;
-    width: 32%;
-    background-color: #f7f5f3;
-    border: 3px solid #9ba6ae;
+    /* width: calc(100%/3); */
+    background-color: var(--clr-neutral-50);
+    border: 3px solid var(--clr-neutral-300);
     border-radius: 10px;
-    padding: 18px;
+    padding: 1em;
+
     display: flex;
+    flex: 1 1 0px;
     flex-direction: column;
     justify-content: space-between;
+    gap: 1em;
     font-family: "Outfit", sans-serif;
   }
 
-  .container {
-    display: flex;
-    gap: 18px;
-    flex-direction: column;
-    align-items: flex-start;
-    overflow: hidden;
-  }
 
   h4 {
-    font-size: 32px;
-    font-weight: 400;
+    font-size: var(--fs-500);
+    font-weight: var(--fw-medium);
   }
 
   .text {
-    font-size: 18px;
-    font-weight: 300;
-    color: #161718;
+    font-size: var(--fs-400);
+    font-weight: var(--fw-regular);
+    color: var(--clr-neutral-950)
   }
 
   .header {
@@ -69,17 +60,18 @@
   }
 
   .bottom {
+    justify-self: flex-end;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    font-weight: 500;
-    font-size: 16px;
-    gap: 18px;
-    align-self: stretch;
+    font-weight: var(--fw-semibold);
+    font-size: 1em;
+    gap: 1em;
     transition: all 0.2s;
   }
 
   .bottom:hover {
     transform: translateX(-2%);
   }
+
 </style>

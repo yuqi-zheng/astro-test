@@ -1,10 +1,17 @@
 ---
+<<<<<<< HEAD
 import '../styles/global.css';
+=======
+import "../styles/global.css";
+import "../styles/fonts.css";
+>>>>>>> f1ffcef5b5a1a7915b24048b9ff1ac075cb5be47
 import Navbar from '../components/Navbar.svelte';
 import Footer from '../components/Footer.svelte';
+import { isSidebarOpen } from '../stores/sidebarStore.js';
 export interface Props {
 	title: string;
 }
+
 
 const { title } = Astro.props;
 ---
@@ -44,9 +51,19 @@ const { title } = Astro.props;
 		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WMD2F9B"
 		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<!-- End Google Tag Manager (noscript) -->
-		<Navbar/>
+		<Navbar client:media="(max-width: 50em)"/>
 		<slot />
 		<Footer/>
 	</body>
 </html>
 
+<<<<<<< HEAD
+=======
+<style>
+	.lockScroll {
+		position: fixed;
+		overflow: hidden;
+	}
+</style>
+
+>>>>>>> f1ffcef5b5a1a7915b24048b9ff1ac075cb5be47
