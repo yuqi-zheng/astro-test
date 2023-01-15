@@ -33,13 +33,8 @@
     flex-direction: column;
     justify-content: space-around;
     width: 50%;
-<<<<<<< HEAD
-    max-width: 700px;
-    height: 450px;
-=======
     max-width: 50em;
     height: 35em;
->>>>>>> f1ffcef5b5a1a7915b24048b9ff1ac075cb5be47
     background-color: rgba(39, 41, 74, 0.8);
     backdrop-filter: blur(5px);
     padding: 1em 2.5em 4em 2.5em;
@@ -65,27 +60,15 @@
     width: 75%;
   }
 
-<<<<<<< HEAD
-  #button {
-    box-sizing: border-box;
-=======
   .button {
->>>>>>> f1ffcef5b5a1a7915b24048b9ff1ac075cb5be47
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
-<<<<<<< HEAD
-    padding: 12px 32px;
-    width: 275px;
-    height: 55px;
-    isolation: isolate;
-=======
     font-size: 1.5em;
     gap: 0.5em;
     padding: 0.4em 2em;
     width: 12em;
->>>>>>> f1ffcef5b5a1a7915b24048b9ff1ac075cb5be47
     text-decoration: none;
     font-family: "Outfit", sans-serif;
     color: #27294a;
@@ -98,20 +81,12 @@
     transition: 0.2s ease-out;
   }
 
-<<<<<<< HEAD
-  #button:hover {
-=======
   .button:hover {
->>>>>>> f1ffcef5b5a1a7915b24048b9ff1ac075cb5be47
     background-position: left;
     border: 2px solid #ea8827;
   }
 
-<<<<<<< HEAD
-  #button:hover img {
-=======
   .button:hover img {
->>>>>>> f1ffcef5b5a1a7915b24048b9ff1ac075cb5be47
     transform: scale(0.8);
     transition: 0.2s ease-in-out;
   }
@@ -125,34 +100,33 @@
     pointer-events: none;
   }
 
-@media screen and (max-width: 50em) {
+  @media screen and (max-width: 50em) {
+    #hero-left {
+      width: 100%;
+      align-items: center;
+      gap: 1em;
+      padding: 2em 1.5em 2em 1.5em;
+    }
+    .wave {
+      display: none;
+    }
+    #expand {
+      width: 100%;
+    }
 
-  #hero-left {
-    width: 100%;
-    align-items: center;
-    gap: 1em;
-    padding: 2em 1.5em 2em 1.5em;
-  }
-  .wave {
-    display: none;
-  }
-  #expand {
-    width: 100%;
+    #text {
+      gap: 4em;
+    }
+
+    .tag {
+      font-size: 3em;
+      text-align: center;
+    }
   }
 
-  #text {
-    gap: 4em;
+  @media screen and (min-width: 150em) {
+    .wave {
+      display: none;
+    }
   }
-
-  .tag {
-    font-size: 3em;
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 150em) {
-  .wave {
-    display: none;
-  }
-}
 </style>

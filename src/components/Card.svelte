@@ -6,20 +6,16 @@
 </script>
 
 <article class="card">
-    <div class="header">
-      <h4>{header}</h4>
-      <img src={icon} alt="icon" />
-    </div>
-    <div class="text">
-      <p>{text}</p>
-    </div>
+  <div class="header">
+    <h4>{header}</h4>
+    <img src={icon} alt="icon" />
+  </div>
+  <div class="text">
+    <p>{text}</p>
+  </div>
   <div class="bottom">
     <p>{second}</p>
-    <img
-      class="arrow"
-      src="arrow.svg"
-      alt="arrow"
-    />
+    <img class="arrow" src="arrow.svg" alt="arrow" />
   </div>
 </article>
 
@@ -40,7 +36,6 @@
     font-family: "Outfit", sans-serif;
   }
 
-
   h4 {
     font-size: var(--fs-500);
     font-weight: var(--fw-medium);
@@ -49,7 +44,7 @@
   .text {
     font-size: var(--fs-400);
     font-weight: var(--fw-regular);
-    color: var(--clr-neutral-950)
+    color: var(--clr-neutral-950);
   }
 
   .header {
@@ -73,5 +68,4 @@
   .bottom:hover {
     transform: translateX(-2%);
   }
-
 </style>

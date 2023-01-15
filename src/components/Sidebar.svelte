@@ -14,7 +14,7 @@
 
 <style>
   aside {
-    position:fixed;
+    position: fixed;
     background-color: var(--clr-primary-800);
     overflow: hidden;
     width: 100%;
@@ -28,7 +28,7 @@
   }
 
   li a {
-    font-family: 'Outfit', sans-serif;
+    font-family: "Outfit", sans-serif;
     text-decoration: none;
     color: var(--clr-accent-200);
     font-size: 2.5em;

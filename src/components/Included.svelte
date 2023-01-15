@@ -113,7 +113,7 @@
     background-color: #f7f5f3;
     border: 3px solid #9ba6ae;
     border-radius: 10px;
-    
+
     display: flex;
     flex: 2 2 0px;
     flex-direction: column;

@@ -1,13 +1,12 @@
 <script>
-    import { Hamburger } from 'svelte-hamburgers';
-    import Menu from './Sidebar.svelte';
-    import { isSidebarOpen } from '../stores/sidebarStore.js';
+  import { Hamburger } from "svelte-hamburgers";
+  import Menu from "./Sidebar.svelte";
+  import { isSidebarOpen } from "../stores/sidebarStore.js";
 
-    function toggleSidebar(state) {
-      isSidebarOpen.set(!state);
-      document.body.classList.toggle('lock-scroll');
-    }
-
+  function toggleSidebar(state) {
+    isSidebarOpen.set(!state);
+    document.body.classList.toggle("lock-scroll");
+  }
 </script>
 
 <header>
@@ -18,19 +17,21 @@
       <li><a href="/services">services</a></li>
     </ul>
     <a id="button" href="/contact">contact us!<img src="send.svg" alt="" /></a>
-    <div id="burger"><Hamburger type='squeeze' --layer-height=0.18em --layer-spacing=0.3em on:click={toggleSidebar($isSidebarOpen)}/>
+    <div id="burger">
+      <Hamburger
+        type="squeeze"
+        --layer-height="0.18em"
+        --layer-spacing="0.3em"
+        on:click={toggleSidebar($isSidebarOpen)}
+      />
     </div>
-  </nav>  
+  </nav>
   {#if $isSidebarOpen}
     <Menu />
   {/if}
 </header>
 
 <style>
-  .locked {
-    position: relative;
-    overflow-y: hidden;
-  }
   header {
     width: 100%;
   }
@@ -71,21 +72,21 @@
 
     /* colour */
     color: white;
-    background: linear-gradient(to left, var(--clr-primary-600) 50%, var(--clr-primary-700) 50%) right;
+    background: linear-gradient(
+        to left,
+        var(--clr-primary-600) 50%,
+        var(--clr-primary-700) 50%
+      )
+      right;
     background-size: 200%;
-    transition: .2s ease-out;
+    transition: 0.2s ease-out;
     border: 1px solid var(--clr-primary-500);
 
     white-space: nowrap;
     isolation: isolate;
 
     /* font */
-<<<<<<< HEAD
-    font-weight: 400;
-    text-decoration: none;
-=======
     font-weight: var(--fw-medium);
->>>>>>> f1ffcef5b5a1a7915b24048b9ff1ac075cb5be47
     font-family: "Outfit", sans-serif;
     font-size: 1.25em;
     text-decoration: none;
@@ -96,8 +97,8 @@
   }
 
   #button:hover img {
-      transform: scale(0.8);
-      transition: 0.2s ease-in-out;
+    transform: scale(0.8);
+    transition: 0.2s ease-in-out;
   }
 
   #burger {
@@ -109,7 +110,8 @@
   }
 
   @media screen and (max-width: 50em) {
-    ul, #button {
+    ul,
+    #button {
       display: none;
     }
 
@@ -125,5 +127,4 @@
       padding: 0.5em 0.5em;
     }
   }
-  
 </style>

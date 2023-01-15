@@ -225,7 +225,6 @@
     color: var(--clr-neutral-50);
   }
 
-
   @media screen and (max-width: 50em) {
     #rows {
       justify-content: center;
@@ -276,7 +275,7 @@
       display: none;
     }
   }
-  
+
   @media screen and (min-width: 150em) {
     .wave-top,
     .wave-bottom {
