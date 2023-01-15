@@ -2,9 +2,9 @@
   import Card from "./Card.svelte";
 </script>
 
-<div>
-  <h2><u>Everything</u> you need with no big unfront cost</h2>
-  <section class="cards">
+<section>
+  <h2><u>Everything</u> you need with no big upfront cost</h2>
+  <div class="cards">
     <Card
       header="Design"
       text="No templates - we custom design your website from the ground up based on your needs.
@@ -26,28 +26,34 @@
       icon="home_repair_service.svg"
       second="Small-business-friendly pricing"
     />
-  </section>
-</div>
+  </div>
+</section>
 
 <style>
+  section {
+    margin-bottom: 2em;
+  }
   h2 {
     font-family: "Outfit", sans-serif;
-    font-size: 32px;
-    font-weight: 400;
-    margin-bottom: 24px;
+    font-size: 2em;
+    font-weight: var(--fw-medium);
+    margin-bottom: 1.5em;
   }
   .cards {
-    box-sizing: border-box;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    padding: 24px;
-    gap: 10px;
+    padding: 1.5em;
+    gap: 1.5em;
     width: 100%;
-    background-color: #5043ba;
-    border: 2px solid #6756de;
+    background-color: var(--clr-primary-700);
+    border: 2px solid var(--clr-primary-700);
     box-shadow: 0px 0px 24px 4px rgba(48, 52, 56, 0.25);
     border-radius: 10px;
+  }
+
+  @media screen and (max-width: 50em) {
+    .cards {
+      flex-direction: column;
+    }
   }
 </style>
