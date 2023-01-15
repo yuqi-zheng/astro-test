@@ -1,8 +1,13 @@
 <script>
     import { Hamburger } from 'svelte-hamburgers';
-    import Menu from './Menu.svelte';
+    import Menu from './Sidebar.svelte';
+    import { isSidebarOpen } from '../stores/sidebarStore.js';
 
-    let open;
+    function toggleSidebar(state) {
+      isSidebarOpen.set(!state);
+      document.body.classList.toggle('lock-scroll');
+    }
+
 </script>
 
 <header>
@@ -13,15 +18,19 @@
       <li><a href="/services">services</a></li>
     </ul>
     <a id="button" href="/contact">contact us!<img src="send.svg" alt="" /></a>
-    <div id="burger"><Hamburger type='squeeze' --layer-height=0.18em --layer-spacing=0.3em bind:open/>
+    <div id="burger"><Hamburger type='squeeze' --layer-height=0.18em --layer-spacing=0.3em on:click={toggleSidebar($isSidebarOpen)}/>
     </div>
   </nav>  
-  {#if open}
+  {#if $isSidebarOpen}
     <Menu />
   {/if}
 </header>
 
 <style>
+  .locked {
+    position: relative;
+    overflow-y: hidden;
+  }
   header {
     width: 100%;
   }

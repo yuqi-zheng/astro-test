@@ -69,7 +69,7 @@
   footer {
     position: relative;
     bottom: 0;
-    background-color: #383971;
+    background-color: var(--clr-primary-800);
     padding: 4em 3em 2em 3em;
     font-family: "Outfit", sans-serif;
     color: #f7f5f3;

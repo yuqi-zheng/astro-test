@@ -83,6 +83,7 @@ html:focus-within {
 html,
 body {
     height: 100%;
+    width: 100%;
     font-family: var(ff-primary);
     overflow-x:hidden;
 }
@@ -103,6 +104,10 @@ main {
 /* a elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
+}
+
+.lock-scroll {
+  overflow: hidden;
 }
 
 /* Make images easier to work with */
