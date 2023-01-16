@@ -1,50 +1,40 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import "../styles/fonts.css";
 ---
 
 <Layout title="Contact Us">
   <main>
-    <div id="col1"></div>
-    <div id="col2">
+    <div class="container">
+      <div class="title">Let's get in touch!</div>
       <form name="contact" method="POST" data-netlify="true">
-        <div id="col2.1">
-          <p class="input">
-            <label>Name <input type="text" name="name" /></label>
-          </p>
-          <p class="input">
+        <div class="row1">
+          <div class="details">
+            <label>Name<input type="text" name="name" /></label>
+          </div>
+          <div class="details">
             <label>Business Name <input type="text" name="name" /></label>
-          </p>
-          <p class="input">
-            <label>Email <input type="email" name="email" /></label>
-          </p>
-          <p class="input">
-            <label>Phone <input type="tel" name="phone" /></label>
-          </p>
+          </div>
         </div>
-        <div id="col2.2">
-          <p class="input"></p><fieldset>
-            <legend>How should we contact you?</legend>
-            <input
-              type="radio"
-              name="contact-method"
-              value="email"
-              id="email"
-            />
-            <label for="email">Email</label>
-            <input
-              type="radio"
-              name="contact-method"
-              value="phone"
-              id="phone"
-            />
-            <label for="phone">Phone</label>
-          </fieldset>
+        <div class="row2">
+          <div class="details">
+            <label>Email <input type="email" name="email" /></label>
+          </div>
+          <div class="details">
+            <label>Phone <input type="tel" name="phone" /></label>
+          </div>
+        </div>
 
-          <p class="input">
-            <label
-              >Tell us about your project <textarea name="message"></textarea>
-            </label>
-          </p>
+        <fieldset>
+          <legend>How should we contact you?</legend>
+          <input type="radio" name="contact-method" value="email" id="email" />
+          <label for="email">Email</label>
+          <input type="radio" name="contact-method" value="phone" id="phone" />
+          <label for="phone">Phone</label>
+        </fieldset>
+
+        <div class="content">
+          <label>Tell us about your project <input name="message" /></label>
           <p>
             <button type="submit">Send</button>
           </p>
@@ -55,4 +45,91 @@ import Layout from "../layouts/Layout.astro";
 </Layout>
 
 <style>
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: "Outfit", sans-serif;
+    font-style: normal;
+    font-size: 1em;
+  }
+
+  .container {
+    width: 70%;
+    /* background: #fff; */
+    margin: auto;
+  }
+
+  .title {
+    font-weight: 500;
+    font-size: 3em;
+    line-height: 1em;
+    color: #303438;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
+  .row1,
+  .row2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 1.5em;
+  }
+
+  .details {
+    width: calc(100% / 2 - 2.5em);
+  }
+
+  .details label {
+    padding-left: 0.4em;
+  }
+
+  .details input {
+    height: 3em;
+    width: 100%;
+    border: 0.15em solid #967eff;
+    border-radius: 1em;
+    padding-left: 0.4em;
+  }
+
+  .content input {
+    padding-left: 0.4em;
+    height: 7em;
+    width: 100%;
+    border: 0.15em solid #967eff;
+    border-radius: 1em;
+    padding-bottom: 4em;
+  }
+
+  .content {
+    margin-bottom: 1.5em;
+  }
+
+  .content label {
+    padding-left: 0.4em;
+    width: 100%;
+  }
+
+  fieldset {
+    padding-left: 0.4em;
+    margin-bottom: 1.5em;
+    border: 0px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  fieldset label {
+    padding-left: 0.5em;
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+  }
+
+  @media screen and (max-width: 50em) {
+    .row1,
+    .row2 {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
 </style>
