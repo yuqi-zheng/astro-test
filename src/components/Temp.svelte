@@ -223,7 +223,7 @@
       width: 100%;
     }
     button {
-      width: 50%;
+      width: 70%;
     }
   }
 </style>
