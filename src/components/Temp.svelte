@@ -201,6 +201,7 @@
 
     label {
       width: 100%;
+      
     }
   }
 </style>
