@@ -71,6 +71,7 @@
   </form>
   <br />
   <br />
+  <p>Full website coming soon...</p>
   <br />
   <a
     id="privacy"
@@ -206,6 +207,9 @@
   }
 
   @media screen and (max-width: 40em) {
+    section {
+      padding: 0.5em;
+    }
     #features {
       flex-direction: column;
       gap: 2em;
