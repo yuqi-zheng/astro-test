@@ -67,7 +67,9 @@
         required
       /></label
     >
+    <button type="submit">Submit</button>
   </form>
+  <br />
   <br />
   <br />
   <a
@@ -149,6 +151,7 @@
   textarea:focus {
     outline: 2px solid #5539cd;
     border: none;
+    border-radius: 10px;
   }
 
   input,
@@ -181,6 +184,23 @@
     padding-left: 0.5em;
   }
 
+  button {
+    width: 30%;
+    margin: 0 auto;
+    padding: 1em;
+    background-color: #5539cd;
+    font-family: "Outfit", sans-serif;
+    font-size: var(--fs-300);
+    color: var(--clr-neutral-50);
+    border-radius: 100px;
+    margin-top: 1em;
+  }
+
+  button:hover {
+    background-image: linear-gradient(rgb(0 0 0/15%) 0 0);
+    cursor: pointer;
+  }
+
   #privacy {
     color: inherit;
   }
@@ -201,7 +221,9 @@
 
     label {
       width: 100%;
-      
+    }
+    button {
+      width: 50%;
     }
   }
 </style>
